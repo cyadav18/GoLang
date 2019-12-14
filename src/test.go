@@ -6,6 +6,12 @@ func main() {
 	var k bool
 	k = primePredictor(31)
 	fmt.Printf("the given number is prime %t", k)
+<<<<<<< HEAD
+=======
+	var str1 = "Helloworld"
+	var str2 = "ByeWorld"
+	fmt.Printf("The value when compared")
+>>>>>>> modified
 }
 func primePredictor(num int) bool {
 	if num == 0 {
