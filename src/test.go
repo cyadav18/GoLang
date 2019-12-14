@@ -8,7 +8,7 @@ func main() {
 	fmt.Printf("the given number is prime %t", k)
 	var str1 = "Helloworld"
 	var str2 = "ByeWorld"
-	fmt.Printf("The value when compared", string.compare(str1, str2))
+	fmt.Printf("The value when compared")
 }
 func primePredictor(num int) bool {
 	if num == 0 {
