@@ -7,6 +7,7 @@ func main() {
 	k = primePredictor(31)
 	fmt.Printf("the given number is prime %t", k)
 }
+
 func primePredictor(num int) bool {
 	if num == 0 {
 		return false
