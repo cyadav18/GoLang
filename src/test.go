@@ -2,10 +2,21 @@ package main
 
 import "fmt"
 
+type Hotdog int
+
+var x Hotdog
+var y int
+
 func main() {
 	var k bool
 	k = primePredictor(31)
-	fmt.Printf("the given number is prime %t", k)
+	x = 12
+	y = int(x)
+	fmt.Printf("the given number is prime %t \n", k)
+	fmt.Printf("The type of x %T \n", x)
+	fmt.Printf("The value of x is %d\n", x)
+	fmt.Printf("The type of y %T \n", y)
+	fmt.Printf("The value of y is %d\n", y)
 }
 
 func primePredictor(num int) bool {
