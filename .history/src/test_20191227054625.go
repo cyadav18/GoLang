@@ -136,7 +136,7 @@ func assignment1() {
 		`no_dr`:           []string{`Being evil`, `Ice cream`, `Sunsets`},
 	}
 	if v, ok := map1[`bond_james`]; ok {
-		fmt.Println(v)
+		fmt.Println(map1[`bond_james`])
 	}
 	for k, v := range map1 {
 
