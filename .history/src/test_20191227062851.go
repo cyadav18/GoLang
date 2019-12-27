@@ -47,10 +47,7 @@ func assignment5() {
 	fmt.Println("first name :", p2.firstName, "\nlast name :", p2.lastName, "\nfavorite icecreams :", p2.favoriteFlavour)
 	fmt.Println("__________________________________________________________")
 	fmt.Println("Question2")
-	map1 := map[string]person{}
-	map1[p1.firstName] = p1
-	map1[p2.lastName] = p2
-	fmt.Println(map1)
+
 	fmt.Println("__________________________________________________________")
 }
 

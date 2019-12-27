@@ -36,21 +36,8 @@ func assignment5() {
 		lastName:        "Yadav",
 		favoriteFlavour: []string{"Venila", "Blueberry", "Chocolate"},
 	}
-	p2 := person{
-		firstName:       "Vijethan",
-		lastName:        "Yadav",
-		favoriteFlavour: []string{"Venila", "Blueberry", "Chocolate"},
-	}
 	fmt.Println(p1)
-	fmt.Println(p2)
-	fmt.Println("first name :", p1.firstName, "\nlast name :", p1.lastName, "\nfavorite icecreams :", p1.favoriteFlavour)
-	fmt.Println("first name :", p2.firstName, "\nlast name :", p2.lastName, "\nfavorite icecreams :", p2.favoriteFlavour)
-	fmt.Println("__________________________________________________________")
-	fmt.Println("Question2")
-	map1 := map[string]person{}
-	map1[p1.firstName] = p1
-	map1[p2.lastName] = p2
-	fmt.Println(map1)
+	fmt.Println("first name ", p1.firstName, "last name", p1.lastName, "favorite icecreams", p1.favoriteFlavour)
 	fmt.Println("__________________________________________________________")
 }
 

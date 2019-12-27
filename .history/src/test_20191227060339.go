@@ -20,38 +20,14 @@ const (
 )
 
 type person struct {
-	firstName       string
-	lastName        string
-	favoriteFlavour []string
+	string firstName
+	string lastName
+	[]string favoriteFlavour
 }
 
 func main() {
-	//assignment4()
+	assignment4()
 	assignment5()
-}
-func assignment5() {
-	fmt.Println("Question1")
-	p1 := person{
-		firstName:       "Chethan",
-		lastName:        "Yadav",
-		favoriteFlavour: []string{"Venila", "Blueberry", "Chocolate"},
-	}
-	p2 := person{
-		firstName:       "Vijethan",
-		lastName:        "Yadav",
-		favoriteFlavour: []string{"Venila", "Blueberry", "Chocolate"},
-	}
-	fmt.Println(p1)
-	fmt.Println(p2)
-	fmt.Println("first name :", p1.firstName, "\nlast name :", p1.lastName, "\nfavorite icecreams :", p1.favoriteFlavour)
-	fmt.Println("first name :", p2.firstName, "\nlast name :", p2.lastName, "\nfavorite icecreams :", p2.favoriteFlavour)
-	fmt.Println("__________________________________________________________")
-	fmt.Println("Question2")
-	map1 := map[string]person{}
-	map1[p1.firstName] = p1
-	map1[p2.lastName] = p2
-	fmt.Println(map1)
-	fmt.Println("__________________________________________________________")
 }
 
 func primefactor(num int) {
@@ -201,7 +177,7 @@ func primePredictor(num int) bool {
 	}
 	return false
 }
-func otherBasic() {
+func otherBasic(){
 	var k bool
 	k = primePredictor(31)
 	x = 12
@@ -220,4 +196,15 @@ func otherBasic() {
 	fmt.Println(a)
 	primefactor(513)
 	fmt.Println(number, "\n", exp)
+}
+func assignment5(){
+	fmt.Println("Question1")
+	p1 := person {
+		firstName:"Chethan",
+		lastName:"Yadav",
+		[]string {"Venila", "Blueberry","Chocolate"}
+
+	}
+	fmt.Println(p1)
+	fmt.Println("__________________________________________________________")
 }

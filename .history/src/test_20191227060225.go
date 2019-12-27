@@ -20,37 +20,25 @@ const (
 )
 
 type person struct {
-	firstName       string
-	lastName        string
-	favoriteFlavour []string
+	string firstName;
+	string lastName;
+	[]string favoriteFlavour;
 }
 
 func main() {
-	//assignment4()
+	assignment4()
 	assignment5()
 }
-func assignment5() {
+
+func assignment5(){
 	fmt.Println("Question1")
-	p1 := person{
-		firstName:       "Chethan",
-		lastName:        "Yadav",
-		favoriteFlavour: []string{"Venila", "Blueberry", "Chocolate"},
-	}
-	p2 := person{
-		firstName:       "Vijethan",
-		lastName:        "Yadav",
-		favoriteFlavour: []string{"Venila", "Blueberry", "Chocolate"},
+	p1 := person {
+		firstName:"Chethan",
+		lastName:"Yadav",
+		[]string {"Venila", "Blueberry","Chocolate"}
+
 	}
 	fmt.Println(p1)
-	fmt.Println(p2)
-	fmt.Println("first name :", p1.firstName, "\nlast name :", p1.lastName, "\nfavorite icecreams :", p1.favoriteFlavour)
-	fmt.Println("first name :", p2.firstName, "\nlast name :", p2.lastName, "\nfavorite icecreams :", p2.favoriteFlavour)
-	fmt.Println("__________________________________________________________")
-	fmt.Println("Question2")
-	map1 := map[string]person{}
-	map1[p1.firstName] = p1
-	map1[p2.lastName] = p2
-	fmt.Println(map1)
 	fmt.Println("__________________________________________________________")
 }
 
@@ -200,24 +188,4 @@ func primePredictor(num int) bool {
 		return true
 	}
 	return false
-}
-func otherBasic() {
-	var k bool
-	k = primePredictor(31)
-	x = 12
-	y = int(x)
-	fmt.Printf("the given number is prime %t \n", k)
-	fmt.Printf("The type of x %T \n", x)
-	fmt.Printf("The value of x is %d\n", x)
-	fmt.Printf("The type of y %T \n", y)
-	fmt.Printf("The value of y is %d\n", y)
-	a := []int{1, 2, 3, 4, 5, 6}
-	b := []int{1}
-	fmt.Println(a)
-	fmt.Println(b)
-	b = append(b, kb, mb/kb, gb/(mb))
-	a = append(a, b...)
-	fmt.Println(a)
-	primefactor(513)
-	fmt.Println(number, "\n", exp)
 }
