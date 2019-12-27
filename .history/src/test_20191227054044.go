@@ -38,7 +38,6 @@ func main() {
 	fmt.Println(a)
 	primefactor(513)
 	fmt.Println(number, "\n", exp)
-	assignment1()
 }
 
 func primefactor(num int) {
