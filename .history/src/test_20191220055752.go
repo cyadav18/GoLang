@@ -36,7 +36,7 @@ func main() {
 	b = append(b, kb, mb/kb, gb/(mb))
 	a = append(a, b...)
 	fmt.Println(a)
-	primefactor(513)
+	primefactor(126)
 	fmt.Println(number, "\n", exp)
 }
 
