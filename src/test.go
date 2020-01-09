@@ -24,12 +24,30 @@ type person struct {
 	lastName        string
 	favoriteFlavour []string
 }
+type vehicle struct {
+	door string
+	string
+	breaks bool
+}
+
+type truck struct {
+	name string
+	vehicle
+	fourWheeler bool
+}
+
+type sedan struct {
+	name        string
+	vehicleSpec vehicle
+	luxury      bool
+}
 
 func main() {
 	//assignment4()
 	assignment5()
 }
 func assignment5() {
+	fmt.Println("__________________________________________________________")
 	fmt.Println("Question1")
 	p1 := person{
 		firstName:       "Chethan",
@@ -52,6 +70,35 @@ func assignment5() {
 	map1[p2.lastName] = p2
 	fmt.Println(map1)
 	fmt.Println("__________________________________________________________")
+	fmt.Println("Question3")
+	v1 := vehicle{
+		door:   "normal door",
+		string: "blue",
+		breaks: true,
+	}
+	v2 := vehicle{
+		door:   "extrodinary door",
+		string: "red",
+		breaks: true,
+	}
+	trk := truck{
+		name: "Lorry",
+		vehicle: vehicle{
+			door:   "old door",
+			string: "yellow",
+			breaks: true,
+		},
+		fourWheeler: true,
+	}
+	sdn := sedan{
+		name:        "sedan",
+		vehicleSpec: v2,
+		luxury:      true,
+	}
+	fmt.Println(v1.door, v1.string)
+	fmt.Println(v2)
+	fmt.Println(trk)
+	fmt.Println(sdn)
 }
 
 func primefactor(num int) {
