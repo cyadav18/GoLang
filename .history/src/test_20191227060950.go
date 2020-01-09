@@ -24,85 +24,21 @@ type person struct {
 	lastName        string
 	favoriteFlavour []string
 }
-type vehicle struct {
-	door string
-	string
-	breaks bool
-}
-
-type truck struct {
-	name string
-	vehicle
-	fourWheeler bool
-}
-
-type sedan struct {
-	name        string
-	vehicleSpec vehicle
-	luxury      bool
-}
 
 func main() {
-	var k bool
-	k = primePredictor(31)
-	fmt.Printf("the given number is prime %t", k)
-	fmt.Printf("The value when compared")
 	//assignment4()
 	assignment5()
 }
 func assignment5() {
-	fmt.Println("__________________________________________________________")
 	fmt.Println("Question1")
 	p1 := person{
 		firstName:       "Chethan",
 		lastName:        "Yadav",
 		favoriteFlavour: []string{"Venila", "Blueberry", "Chocolate"},
 	}
-	p2 := person{
-		firstName:       "Vijethan",
-		lastName:        "Yadav",
-		favoriteFlavour: []string{"Venila", "Blueberry", "Chocolate"},
-	}
 	fmt.Println(p1)
-	fmt.Println(p2)
-	fmt.Println("first name :", p1.firstName, "\nlast name :", p1.lastName, "\nfavorite icecreams :", p1.favoriteFlavour)
-	fmt.Println("first name :", p2.firstName, "\nlast name :", p2.lastName, "\nfavorite icecreams :", p2.favoriteFlavour)
+	fmt.Println("first name :", p1.firstName, "\n last name :", p1.lastName, "\n favorite icecreams :", p1.favoriteFlavour)
 	fmt.Println("__________________________________________________________")
-	fmt.Println("Question2")
-	map1 := map[string]person{}
-	map1[p1.firstName] = p1
-	map1[p2.lastName] = p2
-	fmt.Println(map1)
-	fmt.Println("__________________________________________________________")
-	fmt.Println("Question3")
-	v1 := vehicle{
-		door:   "normal door",
-		string: "blue",
-		breaks: true,
-	}
-	v2 := vehicle{
-		door:   "extrodinary door",
-		string: "red",
-		breaks: true,
-	}
-	trk := truck{
-		name: "Lorry",
-		vehicle: vehicle{
-			door:   "old door",
-			string: "yellow",
-			breaks: true,
-		},
-		fourWheeler: true,
-	}
-	sdn := sedan{
-		name:        "sedan",
-		vehicleSpec: v2,
-		luxury:      true,
-	}
-	fmt.Println(v1.door, v1.string)
-	fmt.Println(v2)
-	fmt.Println(trk)
-	fmt.Println(sdn)
 }
 
 func primefactor(num int) {
