@@ -44,8 +44,37 @@ type sedan struct {
 
 func main() {
 	//assignment4()
-	assignment5()
+	//assignment5()
+	assignment7()
 }
+func assignment7() {
+	//Question 1
+	p := &person{
+		firstName:       "Chethan",
+		lastName:        "Yadav",
+		favoriteFlavour: []string{"blueberry", "cranberry", "strawberry"},
+	}
+	fmt.Printf("%T \n", p)
+	changeName(p, "Vijethan")
+	p1 := person{
+		firstName:       "Chethan",
+		lastName:        "Yadav",
+		favoriteFlavour: []string{"blueberry", "cranberry", "strawberry"},
+	}
+	fmt.Println(*p)
+	fmt.Println(p)
+	(*p).displayPerson()
+	p1.displayPerson()
+}
+func changeName(p *person, s string) {
+	(*p).displayPerson()
+	(*p).firstName = "Vijethan"
+	(*p).displayPerson()
+}
+func (p *person) displayPerson() {
+	fmt.Println("I'm the person speaking", p.firstName, p.lastName, "and his favorite icreams are ", p.favoriteFlavour)
+}
+
 func assignment5() {
 	fmt.Println("__________________________________________________________")
 	fmt.Println("Question1")
