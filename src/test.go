@@ -259,6 +259,7 @@ func assignment3() {
 	case false:
 		fmt.Println("False")
 	}
+
 }
 func assignment2() {
 	//https://play.golang.org/p/-tkMWUmaWvw
