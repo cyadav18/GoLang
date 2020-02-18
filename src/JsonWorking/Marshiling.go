@@ -52,7 +52,7 @@ func main() {
 		RollNo:  21,
 	}
 	var1 := []student{st}
-	bs, err := json.Marshal(var1)
+	bs, err := json.MarshalIndent(var1, "", "	")
 	if err != nil {
 		fmt.Println(err)
 	}

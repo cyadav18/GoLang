@@ -43,9 +43,10 @@ type sedan struct {
 }
 
 func main() {
+	assignment3()
 	//assignment4()
 	//assignment5()
-	assignment7()
+	//assignment7()
 }
 func assignment7() {
 	//Question 1 and 2
@@ -246,7 +247,29 @@ func assignment4() {
 	fmt.Println(map1)
 	fmt.Println(len(map1))
 }
-
+func assignment3() {
+	//Question 1
+	for i := 1; i <= 10; i++ {
+		fmt.Print(i, " ")
+	}
+	fmt.Println()
+	switch false {
+	case true:
+		fmt.Println("True")
+	case false:
+		fmt.Println("False")
+	}
+}
+func assignment2() {
+	//https://play.golang.org/p/-tkMWUmaWvw
+	var a int
+	a = 23
+	fmt.Println(a)
+	fmt.Printf("binary representation %b \n", a)
+	fmt.Printf("Octal representation %o \n", a)
+	fmt.Printf("Hexadecimal representation %x \n", a)
+	fmt.Printf("type of a %T \n", a)
+}
 func getnumExpo(num1, num2 int) int {
 	count := 0
 	for num1 != 0 {
