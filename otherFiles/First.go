@@ -26,6 +26,6 @@ func main() {
 		fmt.Printf("%d \t %d\n", i, v)
 	}
 	for i, v := range y {
-		fmt.Printf("%d \t %d\n", i, v)
+		fmt.Printf("%d \t %d\n \t", i, v)
 	}
 }
